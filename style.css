@@ -1,0 +1,129 @@
+div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(0, 0, 0), rgb(3, 31, 66));
+    scroll-behavior: smooth;
+}
+
+h1, h2, p {
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+ul, li {
+    color: rgb(122, 153, 253);
+    font-family: sans-serif;
+}
+
+h4 {
+    color:rgb(188, 62, 247);
+    font-family: Verdana, sans-serif;
+}
+
+h5 {
+    color: rgb(203, 195, 231);
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(rgb(6, 8, 124), rgb(29, 2, 48));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+ul, li, a {
+    color: white;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.logo {
+    transition: 1s;
+}
+
+.logo:hover {
+    transform: rotate(-360deg)
+}
+
+.container {
+    line-height: 60px;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+button {
+    border-color: rgb(111, 27, 189);
+    background-color: black;
+}
+
+main {
+    padding: 120px 1rem;
+}
+
+.footer-container {
+    position: sticky;
+    top: 100%;
+    padding: 4em;
+    margin-top: -6em;
+    background: linear-gradient(rgb(51, 51, 51), black);
+    font-family: Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    margin-inline: -2em;
+    overflow: hidden;
+}
+
+.copyright {
+    margin-top: 30px;
+}
+
+h5 {
+    padding-top: 1em;
+}
+
+footer {
+    margin-top: auto;
+}
+
+main {
+    animation: fade-in 1.5s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
