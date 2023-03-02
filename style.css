@@ -39,6 +39,7 @@ h5 {
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    z-index: 1;
 }
 
 ul, li, a {
@@ -71,12 +72,8 @@ ul, li, a {
     width: 100%;
 }
 
-button {
-    border-color: rgb(111, 27, 189);
-    background-color: black;
-}
-
 main {
+    overflow: hidden;
     padding: 120px 1rem;
 }
 
@@ -112,6 +109,7 @@ h5 {
 
 footer {
     margin-top: auto;
+    z-index: 1;
 }
 
 main {
@@ -120,10 +118,12 @@ main {
 
 @keyframes fade-in {
     from {
+        transform: translateY(30px);
         opacity: 0;
     }
 
     to {
+        transform: translateY(0px);
         opacity: 1;
     }
 }
